@@ -1,0 +1,48 @@
+.title{
+  text-align: center;
+  font-size: 70px;
+}
+
+.title_color{
+  color: #2ECFC1;
+}
+
+.list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  margin: 20px 20px 50px 20px;
+}
+
+.item:hover .icon{
+  fill: #2ECFC1;
+}
+
+.icon{
+  width: 70px;
+  transition: all .4s;
+}
+
+@media (max-width: 1000px){
+  .list{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item{
+    margin: 20px;
+  }
+
+  .link{
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon{
+    width: 35%;
+  }
+}

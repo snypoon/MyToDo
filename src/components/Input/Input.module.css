@@ -1,0 +1,31 @@
+.input{
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn{
+  display: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0 0 0 10px;
+  border: 1px transparent;
+  border-radius: 10%;
+  transition: all .4s;
+}
+
+.btn:active{
+  background: #2ECFC1;
+}
+
+.icon{
+  fill: #2ECFC1;
+  min-height: 56px;
+  min-width: 56px;
+}
+
+@media (max-width: 1000px){
+  .btn{
+    display: flex;
+  }
+}

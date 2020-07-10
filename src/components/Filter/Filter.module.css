@@ -1,0 +1,29 @@
+.list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item{
+  padding: 2.5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: .4s all;
+}
+
+.item:hover{
+  color: #2ECFC1;
+}
+
+.active{
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  color: #2ECFC1;
+  padding: 2.5px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: .4s all;
+}

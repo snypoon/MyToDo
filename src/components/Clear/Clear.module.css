@@ -1,0 +1,9 @@
+.item{
+  cursor: pointer;
+  padding: 2.5px;
+  transition: .4s all;
+}
+
+.item:hover{
+  color: #2ECFC1;
+}
