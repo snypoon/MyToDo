@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import styles from './App.module.css';
 import Links from '../Links/Links';
 import Todo from '../Todo/Todo';
@@ -8,7 +8,7 @@ import About from '../About/About';
 
 const App = () => {
   return(
-    <BrowserRouter basename="MyToDo-demo">
+    <Router>
       <nav className={styles.nav}>
         <Links></Links>
       </nav>
@@ -17,7 +17,7 @@ const App = () => {
         <Route path='/' exact component={Todo}></Route>
         <Route path='/contacts' component={Contacts}></Route>
       </div>
-    </BrowserRouter>
+    </Router>
   )
 };
 
