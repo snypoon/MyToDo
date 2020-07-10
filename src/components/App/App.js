@@ -8,7 +8,7 @@ import About from '../About/About';
 
 const App = () => {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="MyToDo-demo">
       <nav className={styles.nav}>
         <Links></Links>
       </nav>
