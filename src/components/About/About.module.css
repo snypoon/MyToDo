@@ -65,7 +65,7 @@
   text-decoration: none;
   transition: all .4s;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .worksLink:hover{
@@ -121,6 +121,7 @@
   border-top: 1.3px solid rgba(0,0,0,0.3);
   color: black;
   transition: all .4s;
+  max-height: 67px;
 }
 
 .item:hover{

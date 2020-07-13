@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import styles from './Input.module.css';
+import Icons from '../Icons/Icons';
 
 // style for input
 const CssTextField = withStyles({
@@ -72,13 +73,7 @@ class Input extends React.Component{
         onKeyPress={this.onKeyDownAction}
       />
       <button className={styles.btn} onClick={this.onClickAction}>
-        <svg className={styles.icon} viewBox="0 0 384 384">
-          <g><g>
-          <path d="M341.333,0H42.667C19.093,0,0,19.093,0,42.667v298.667C0,364.907,19.093,384,42.667,384h298.667
-              C364.907,384,384,364.907,384,341.333V42.667C384,19.093,364.907,0,341.333,0z M298.667,213.333h-85.333v85.333h-42.667v-85.333
-              H85.333v-42.667h85.333V85.333h42.667v85.333h85.333V213.333z"/>
-          </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-        </svg>
+        <Icons.InputButton styles={styles.icon}/>
       </button>
       
     </div>)
